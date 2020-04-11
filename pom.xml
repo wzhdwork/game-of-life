@@ -30,15 +30,15 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.0</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.11</version>
+                <version>2.22.1</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
@@ -133,7 +133,7 @@
             <plugin>
                 <groupId>com.jelastic</groupId>
                 <artifactId>jelastic-maven-plugin</artifactId>
-                <version>1.6</version>
+                <version>1.8</version>
                 <configuration>
                     <email>${jelastic.username}</email>
                     <password>${jelastic.password}</password>
@@ -159,9 +159,8 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <storyType>html</storyType>                         l
-                        <storyReport>${basedir}/target/easyb/easyb-report.html
-                        </storyReport>
+                        <storyType>html</storyType>                         
+                        <storyReport>${basedir}/target/easyb/easyb-report.html</storyReport>
                     </configuration>
                 </plugin>
 
@@ -245,7 +244,7 @@
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>3.2</version>
                         <configuration>
-                            <targetJdk>1.6</targetJdk>
+                            <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
                             <format>xml</format>
                             <!-- CPD options -->
@@ -323,7 +322,7 @@
                                     <artifactId>maven-pmd-plugin</artifactId>
                                     <version>3.2</version>
                                     <configuration>
-                                        <targetJdk>1.6</targetJdk>
+                                        <targetJdk>1.8</targetJdk>
                                         <aggregate>true</aggregate>
                                         <format>xml</format>
                                         <rulesets>
@@ -347,7 +346,7 @@
                                     <artifactId>maven-javadoc-plugin</artifactId>
                                     <version>2.9.1</version>
                                     <configuration>
-                                        <source>1.6</source>
+                                        <source>1.8</source>
                                         <doclet>
                                             gr.spinellis.umlgraph.doclet.UmlGraphDoc
                                         </doclet>
@@ -437,7 +436,7 @@
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>2.5</version>
                         <configuration>
-                            <targetJdk>1.6</targetJdk>
+                            <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
                             <format>xml</format>
                             <rulesets>
@@ -470,7 +469,7 @@
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>2.7</version>
                         <configuration>
-                            <source>1.6</source>
+                            <source>1.8</source>
                             <doclet>
                                 gr.spinellis.umlgraph.doclet.UmlGraphDoc
                             </doclet>
